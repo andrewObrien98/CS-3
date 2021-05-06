@@ -6,7 +6,7 @@ public class Task1 extends Task {
         super(ID,start,deadline,duration);
     }
     @Override
-    public int compareTo(Task t2) {
+    public int compareTo(Task t2) {//I know right here I didnt leave anything up to chance if they tied but I think in a real world a person wouldnt want to
          if (start < t2.start) return -1;
          if(start == t2.start && deadline < t2.deadline) return -1;
          if(start == t2.start && deadline == t2.deadline && duration > t2.duration) return -1;
@@ -23,7 +23,7 @@ public class Task1 extends Task {
          super(ID,start,deadline,duration);
      }
      @Override
-     public int compareTo(Task t2) {
+     public int compareTo(Task t2) {//I know right here I didnt leave anything up to chance if they tied but I think in a real world a person wouldnt want to
          if(deadline < t2.deadline)return -1;
          if(deadline == t2.deadline && start < t2.start) return -1;
          if(deadline == t2.deadline && start == t2.start && duration > t2.duration) return -1;

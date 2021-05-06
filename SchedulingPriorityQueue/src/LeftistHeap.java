@@ -116,7 +116,17 @@ public class LeftistHeap<E extends Comparable<E>> {
         printTree(node.left, indentation + " ");
     }
 
+    /**
+     *
+     * @return true if root is null and false otherwise
+     */
+    public boolean isEmpty(){
+        return root == null;
+    }
 
+    /**
+     * This is just a class for the node that stores its element, left and right node, and its npl
+     */
     public class Node {
         Node left;
         Node right;

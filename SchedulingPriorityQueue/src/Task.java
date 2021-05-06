@@ -8,6 +8,7 @@ public class Task implements Comparable<Task> {
         this.start = 0;
         this.deadline = 0;
         this.duration = 0;
+
     }
 
 
